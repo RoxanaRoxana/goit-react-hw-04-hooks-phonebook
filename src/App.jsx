@@ -40,7 +40,7 @@ export default function App() {
     );
   };
 
-  const addContact = ({ name, number }) => {
+  const addContact = ( name, number ) => {
     const contact = { id: nanoid(), name, number };
 
     return contacts.some(item => item.name === name)
